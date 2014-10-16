@@ -1,6 +1,6 @@
-calcule.poids = function(xl,y,ind.par,rep.par,alpha,lc,klc=1)
+calcule.poids.alphafixe = function(xl,y,ind.par,rep.par,alpha,lc,klc=1)
 # Fonction pour calculer le poids de chaque paire de sujet pour les tests du score conditionnels à un locus
-# d'après l'équation 2 de Chen et al. (2009)
+# d'après l'équation 6 de Bureau et al. (2014)
 ###################### Définition des arguments #####################################################################################
 # xl : matrice de design pour une famille pour le calcul des covariances
 # ind.par : donne les indices des locus pour la catégorie à laquelle chaque terme appartient
@@ -27,7 +27,7 @@ calcule.poids = function(xl,y,ind.par,rep.par,alpha,lc,klc=1)
   # Ce locus doit être inclus dans au moins une fonction logistique
   ilc = ind.par[[kk]][lc]
   plc = outer(xl[,ilc,klc],xl[,ilc,klc],"-")*outer(alpha.y,alpha.y,"-")
-  wk = 8/ni * exp(plc)/(1+exp(plc))^3
+  wk = 2/(ni*(1+exp(plc)))
   # On copie les mêmes poids pour toutes les catégories de réponse
   for (k in 1:dim(xl)[3])
     w[,,k] = wk
