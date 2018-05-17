@@ -1,10 +1,10 @@
 Package: fat2Lpoly
 Type: Package
-Title: Two-Locus Family-Based Association Test with Polytomic Outcome
-Version: 1.2.2
-Date: 2015-10-20
+Title: Two-Locus Family-Based Association Test with Polytomous Outcome
+Version: 1.2.3
+Date: 2018-05-17
 Author: Alexandre BUREAU <alexandre.bureau@msp.ulaval.ca> and Jordie Croteau
-        <jordie.croteau@crulrg.ulaval.ca>
+        <jorcroteau@gmail.com>
 Maintainer: Alexandre BUREAU <alexandre.bureau@msp.ulaval.ca>
 Depends: R (>= 3.2)
 Imports: kinship2, multgee
@@ -14,6 +14,6 @@ License: GPL
 LazyLoad: yes
 URL: http://www.crulrg.ulaval.ca/pages_perso_chercheurs/bureau_a/
 NeedsCompilation: no
-Packaged: 2015-10-20 19:39:50 UTC; Jordie
+Packaged: 2018-05-17 20:04:19 UTC; alexandrebureau
 Repository: CRAN
-Date/Publication: 2015-10-21 10:01:51
+Date/Publication: 2018-05-17 20:36:20 UTC
