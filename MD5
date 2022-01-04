@@ -1,4 +1,4 @@
-e9e8e61987b5d0b15f6037493f5f5673 *DESCRIPTION
+24ec825fcffcd9fabe95a051d0c661a5 *DESCRIPTION
 3cfa3a695476b6612bba50e4e0aceea1 *NAMESPACE
 a2a6a2487981dd43dde718b0ad39eba7 *R/alleles2sums.R
 d29a64fe02f8c992b2ac7d692b731e97 *R/calcule.poids.Chen.R
@@ -17,12 +17,12 @@ e5853905bbf53b82a6e6b702cfa9e5df *R/fat2Lpoly.R
 ac4f839d47d5e1bf50bc512fa730907b *R/ibd.terms.R
 12599fb69bf9a68bd501c43f1273bd42 *R/ibd.terms.w.r
 137c2a0181f0adc09e4407335389fab5 *R/produits.paires.R
-d0e5d359ff5c5e2e61c6284826cb315f *R/read.merlin.files.R
+8d3f11b7e71532dc66999ea712597f5f *R/read.merlin.files.R
 6b780102e668696bb8a4a8f3fb53ba48 *R/score.poly.R
 3563fb5f4ab7a84dc933d3f3b13b8d8f *R/score.poly.w.r
 8fbf37545ff0fb7628d0c75d16dcd22b *R/scores.covs.R
-b9495af5f8dd7d8d7433cc76f37fec29 *data/fat2Lpoly.allSNPs.rda
-2924f3cffd37c227255a34206ff2bc85 *data/ped.x.all.rda
+456d586cb28cf52130b4f3a6ee3cf084 *data/fat2Lpoly.allSNPs.rda
+6835fdd56b22252c933bc9b8b28d1482 *data/ped.x.all.rda
 f94acb3141c835660962f00d10d6c446 *inst/extdata/loc1.dat
 276aca53a3d4306e9fa10f41c42800e2 *inst/extdata/loc1.freq
 2f411096480fcaa6cc67e2ee72c308d1 *inst/extdata/loc1.ibd
