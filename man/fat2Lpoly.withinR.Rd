@@ -20,7 +20,7 @@ object returned by the function \code{read.merlin.files} or having the same form
 matrix of one or two columns giving the names of the SNPs (if one column matrix) or pairs of SNPs (if two columns matrix) to be analyzed.  These SNPs represent all or part of the SNPs in the data files \code{datfilenames}.
 }
   \item{ibd.loci}{
-matrix of the same dimensions as \code{snp.names.mat}, giving the respective names of the markers (used to obtain the IBD results) nearest to the corresponding SNPs. The marker names must be written exactly the same as in the ibd files \code{ibdfilenames} for extraction of IBD data.  If the IBD data are specified by genetic positions instead of marker names, this matrix must contain the genetic positions of the markers instead of the marker names. If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link{kinship}} from the package \code{kinship2}.
+matrix of the same dimensions as \code{snp.names.mat}, giving the respective names of the markers (used to obtain the IBD results) nearest to the corresponding SNPs. The marker names must be written exactly the same as in the ibd files \code{ibdfilenames} for extraction of IBD data.  If the IBD data are specified by genetic positions instead of marker names, this matrix must contain the genetic positions of the markers instead of the marker names. If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link[kinship2]{kinship}} from the package \code{kinship2}.
 }
   \item{contingency.file}{
 if 'TRUE' (default is 'FALSE'), then a file called descriptive_statistics'date_and_time'.txt is created and contingency tables with the numbers of subjects per level are progressively added to this file.
@@ -48,7 +48,7 @@ Optional matrix of dimensions (\code{n.levels}-1) x nc specifying the nc linear 
 \details{
 File "descriptive_statistics'date_and_time'.txt" (will be created if contingency.file='TRUE'): For each tested SNP, it shows contingency tables of the subjects in the 2 or 4 different categories, first for all families together and then for each individual family.
 
-If the argument ibd.loci is left unspecified (or NULL, its default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link{kinship}} from the package \code{kinship2}.
+If the argument ibd.loci is left unspecified (or NULL, its default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link[kinship2]{kinship}} from the package \code{kinship2}.
 }
 \value{
   \item{scores.covs.all.SNPs}{

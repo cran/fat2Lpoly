@@ -1,4 +1,4 @@
-24ec825fcffcd9fabe95a051d0c661a5 *DESCRIPTION
+b8e897ab8ab93527c2ad3fc61366ca61 *DESCRIPTION
 3cfa3a695476b6612bba50e4e0aceea1 *NAMESPACE
 a2a6a2487981dd43dde718b0ad39eba7 *R/alleles2sums.R
 d29a64fe02f8c992b2ac7d692b731e97 *R/calcule.poids.Chen.R
@@ -21,8 +21,8 @@ ac4f839d47d5e1bf50bc512fa730907b *R/ibd.terms.R
 6b780102e668696bb8a4a8f3fb53ba48 *R/score.poly.R
 3563fb5f4ab7a84dc933d3f3b13b8d8f *R/score.poly.w.r
 8fbf37545ff0fb7628d0c75d16dcd22b *R/scores.covs.R
-456d586cb28cf52130b4f3a6ee3cf084 *data/fat2Lpoly.allSNPs.rda
-6835fdd56b22252c933bc9b8b28d1482 *data/ped.x.all.rda
+31d472c49321a3acbeed323f12803448 *data/fat2Lpoly.allSNPs.rda
+f850d05c528fa76922a217e683042707 *data/ped.x.all.rda
 f94acb3141c835660962f00d10d6c446 *inst/extdata/loc1.dat
 276aca53a3d4306e9fa10f41c42800e2 *inst/extdata/loc1.freq
 2f411096480fcaa6cc67e2ee72c308d1 *inst/extdata/loc1.ibd
@@ -36,9 +36,9 @@ e0809510af61b6e71ce94a53f2b8f950 *inst/extdata/loc2.ped
 a55393e0ed486a0dae623914a508a948 *man/design.endo2disease.Rd
 ad364d529b6848a450b3a66f8745db7f *man/design.full.Rd
 9a3c501647b366e2abab8da19223eb66 *man/fat2Lpoly-internal.Rd
-73b6d21a369f920fb431dd06284584ee *man/fat2Lpoly.Rd
+f114a34547c21f76fff5586dab3b809c *man/fat2Lpoly.Rd
 36a9184e890e2417fcbba6ea906f9b7f *man/fat2Lpoly.allSNPs.Rd
-97737caa04fc260e6de829bebe256824 *man/fat2Lpoly.withinR.Rd
+6b74a93d1a1d090301a67508c8012984 *man/fat2Lpoly.withinR.Rd
 6d4e6d2b961025ab859113cbfee882b9 *man/get.scores.pvalues.Rd
 62a125af9f639621bad4cf2980e4f202 *man/ped.x.all.Rd
 30473cb92a6f2e43bc6bdf877110ca70 *man/read.merlin.files.Rd

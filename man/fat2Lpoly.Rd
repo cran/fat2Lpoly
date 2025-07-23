@@ -28,13 +28,13 @@ or
 (2) a list of length 1 or 2 (the number of loci involved in the \code{design} function), each element of which is a numeric vector of length 'number of SNPs in \code{datfilenames}' and specifies each SNP's minor allele.
 }
   \item{ibdfilenames}{
-vector of 1 or 2 (the number of loci involved in the \code{design} function) character strings giving the names of the Merlin format ibd files corresponding to the pedigree files. If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link{kinship}} from the package \code{kinship2}.
+vector of 1 or 2 (the number of loci involved in the \code{design} function) character strings giving the names of the Merlin format ibd files corresponding to the pedigree files. If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link[kinship2]{kinship}} from the package \code{kinship2}.
 }
   \item{snp.names.mat}{
 matrix of one or two columns giving the names of the SNPs (if one column matrix) or pairs of SNPs (if two columns matrix) to be analyzed.  These SNPs represent all or part of the SNPs in the data files \code{datfilenames}.
 }
   \item{ibd.loci}{
-matrix of the same dimensions as \code{snp.names.mat}, giving the respective names of the markers (used to obtain the IBD results) closest to the corresponding SNPs. The marker names must be written exactly the same as in the ibd files \code{ibdfilenames} for extraction of IBD data. If the IBD data are specified by genetic positions instead of marker names, then for each SNP, specify the genetic position where IBD was inferred which is closest to the corresponding SNP.  If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link{kinship}} from the package \code{kinship2}.
+matrix of the same dimensions as \code{snp.names.mat}, giving the respective names of the markers (used to obtain the IBD results) closest to the corresponding SNPs. The marker names must be written exactly the same as in the ibd files \code{ibdfilenames} for extraction of IBD data. If the IBD data are specified by genetic positions instead of marker names, then for each SNP, specify the genetic position where IBD was inferred which is closest to the corresponding SNP.  If NULL (the default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link[kinship2]{kinship}} from the package \code{kinship2}.
 }
   \item{joint.tests}{
 list of vectors of numbers between 1 and the total number of parameters in the \code{design} function. Each vector gives parameter indices to test the corresponding parameters jointly.  The default is not to perform any joint test.
@@ -73,7 +73,7 @@ Conditioning on the first SNP in a SNP pair is implemented by weighting the obse
 
 File "descriptive_statistics'date_and_time'.txt" (will be created if contingency.file='TRUE'): For each tested SNP, it shows contingency tables of the subjects in the 2 or 4 different categories, first for all families together and then for each individual family.
 
-If one or both of the arguments ibd.loci and ibdfilenames are left unspecified (or NULL, their default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link{kinship}} from the package \code{kinship2}.
+If one or both of the arguments ibd.loci and ibdfilenames are left unspecified (or NULL, their default), then we use the kinship coefficients multiplied by two, instead of the expectation of the IBD probabilities, in the computation of the score statistics. The kinship coefficients are obtained using the function \code{\link[kinship2]{kinship}} from the package \code{kinship2}.
 }
 \value{
 returns a list of five objects:
